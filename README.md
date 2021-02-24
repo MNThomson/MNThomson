@@ -3,7 +3,7 @@
 ### I'm a Student, Developer, and Mentor!!
 
 - 📚 SOFTWARE Engineering Student!
-- 🌱 Curretly taking a MERN stack course
+- 🌱 Currently taking a MERN stack course
 - 🥅 2021 Goals: Commence contributing to Open Source projects
 - ⚡ Fun fact: I'm building a time management application
 
