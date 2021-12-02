@@ -25,13 +25,12 @@ jobs:
       run: |
         python .github/workflows/scripts/RM_Template.py
       shell: bash
-    - name: Commit README
+    - name: Check for change
       run: |
         git diff --exit-code --quiet README.md
         if [ $? == "0" ]; then exit 0; fi
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add -f README.md
-        git commit -m "$(git log -1 --pretty=%B) [Automated README Build]"
-        git push
-      shell: bash
+    - name: Commit README
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "${{ github.event.head_commit.message }} [Automated Change]"
+        file_pattern: README.md
