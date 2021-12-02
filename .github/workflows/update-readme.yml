@@ -3,9 +3,10 @@ name: Update README
 on:
   push:
     paths:
-      - '**Cards.yml'
-      - '**RM_Template.py'
-      - '**Template.md'
+      - '.github/Cards.yml'
+      - '.github/TEMPLATE.md'
+      - '.github/workflows/update-readme.yml'
+      - '.github/workflows/scripts/RM_Template.py'
 
 jobs:
   build:
