@@ -26,7 +26,7 @@ jobs:
       shell: bash
     - name: Commit README
       run: |
-        git diff --exit-code --quiet .github/workflows/update-readme.yml
+        git diff --exit-code --quiet README.md
         if [ $? == "1" ]; then exit 0; fi
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
