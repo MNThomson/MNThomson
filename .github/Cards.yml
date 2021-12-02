@@ -1,0 +1,30 @@
+#Header:
+# Name:If_logo_different
+Languages:
+  Python:
+  JavaScript:
+  Java:
+  Go:
+  HTML5:
+  CSS3:
+---
+TechStack:
+  Reactjs: react
+  Nodejs: Node.js
+  Express:
+  PosgreSQL:
+---
+DevOps:
+  Ansible:
+  Terraform:
+  Packer:
+  Kubernetes:
+  Docker:
+---
+Tools:
+  AWS: amazonaws
+  Heroku:
+  Git:
+  GitHub:
+  Ubuntu:
+  Alpine_Linux: AlpineLinux

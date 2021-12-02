@@ -1,17 +1,36 @@
 name: Update README
 
 on:
-  schedule:
-    - cron: "0 * * * *"
-  workflow_dispatch:
+  push:
+    paths:
+      - '**Cards.yml'
+      - '**RM_Template.py'
+      - '**Template.md'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Update this repo's README with recent activity
-
+    name: Update this repo's README
     steps:
-      - uses: actions/checkout@v2
-      - uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Install PyYAML
+      run: |
+        pip install pyyaml
+      shell: bash
+    - name: Template
+      run: |
+        python .github/workflows/scripts/RM_Template.py
+      shell: bash
+    - name: Commit README
+      run: |
+        git diff --exit-code --quiet .github/workflows/update-readme.yml
+        if [ $? == "1" ]; then exit 0; fi
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add -f README.md
+        git commit -m "$(git log -1 --pretty=%B) [Automated README Build]"
+        git push
+      shell: bash
