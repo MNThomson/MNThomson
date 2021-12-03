@@ -28,7 +28,7 @@ jobs:
     - name: Check for change
       run: |
         git diff --exit-code --quiet README.md
-        if [ $? == "0" ]; then exit 0; fi
+        if [ $? -eq 0 ]; then echo "No File Changes"; exit 0; fi
     - name: Commit README
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
