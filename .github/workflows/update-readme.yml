@@ -27,9 +27,8 @@ jobs:
       shell: bash
     - name: Check for change
       run: |
-        git diff --exit-code --quiet README.md
-        if [ $? -eq 0 ]; then echo "No File Changes"; exit 0; fi
-    - name: Commit README
+        if git diff --quiet README.md; then echo "No File Changes"; exit 0; fi
+    - name: Commit README 
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: "${{ github.event.head_commit.message }} [Automated Change]"
