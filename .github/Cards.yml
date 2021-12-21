@@ -12,7 +12,7 @@ TechStack:
   Reactjs: react
   Nodejs: Node.js
   Express:
-  PosgreSQL:
+  PostgreSQL:
 ---
 DevOps:
   Ansible:
