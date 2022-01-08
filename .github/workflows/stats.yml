@@ -1,0 +1,35 @@
+name: Stats 
+
+on:
+  push:
+    paths:
+      - '.github/workflows/stats.yml'
+      - '.github/workflows/scripts/stats.py'
+  schedule:
+    - cron:  '0 1 * * *'
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    name: Update MNThomsons's Github Stats
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Install requests
+      run: |
+        pip install requests
+      shell: bash
+    - name: Create Stats
+      run: >
+        User=MNThomson GH_TOKEN=${{ secrets.GITHUB_TOKEN }} python .github/workflows/scripts/stats.py
+      shell: bash
+    - name: Update Gist
+      uses: exuanbo/actions-deploy-gist@v1
+      with:
+        token: ${{ secrets.GIST_TOKEN }}
+        gist_id: be528d5da02902686f675486f093ad3b
+        gist_description: MNThomson Profile Stats
+        gist_file_name: stats.json
+        file_path: stats.json
