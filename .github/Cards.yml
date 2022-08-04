@@ -2,29 +2,25 @@
 # Name:If_logo_different
 Languages:
   Python:
-  JavaScript:
-  Java:
   Go:
-  HTML5:
-  CSS3:
+  TypeScript:
+  Java: OpenJDK
 ---
 TechStack:
-  Reactjs: react
-  Nodejs: Node.js
+  React:
+  Nextjs: Next.js
   Express:
   PostgreSQL:
 ---
 DevOps:
-  Ansible:
-  Terraform:
-  Packer:
   Kubernetes:
+  Terraform:
   Docker:
+  Ansible:
+
 ---
 Tools:
   AWS: amazonaws
   Heroku:
   Git:
-  GitHub:
   Ubuntu:
-  Alpine_Linux: AlpineLinux
