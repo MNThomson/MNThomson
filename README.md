@@ -1,11 +1,14 @@
-### Hey there, I'm Max 👋
+<h1 align="center">Hey there, I'm Max! 👋</h1>
 
-![📝 Languages](https://img.shields.io/badge/-%F0%9F%93%9D%20Languages:-black?style=flat-square) &nbsp; ![Python](https://img.shields.io/badge/-Python-black?style=flat-square&logo=python) ![TypeScript](https://img.shields.io/badge/-TypeScript-black?style=flat-square&logo=typescript) ![Rust](https://img.shields.io/badge/-Rust-black?style=flat-square&logo=rust) ![Go](https://img.shields.io/badge/-Go-black?style=flat-square&logo=go) <br> ![🚀 DevOps](https://img.shields.io/badge/-%F0%9F%9A%80%20DevOps    :-black?style=flat-square) &nbsp; ![Kubernetes](https://img.shields.io/badge/-Kubernetes-black?style=flat-square&logo=kubernetes) ![Terraform](https://img.shields.io/badge/-Terraform-black?style=flat-square&logo=terraform) ![AWS](https://img.shields.io/badge/-AWS-black?style=flat-square&logo=amazonaws) ![Docker](https://img.shields.io/badge/-Docker-black?style=flat-square&logo=docker)
+<p align="center">I work on cloud infrastructure, system observability, automation tooling, & fullstack websites</p>
 
-### 🚧 GitHub Stats
+## I work with this tech
+<p align="center"><a href="#">
+  <img src="https://skillicons.dev/icons?i=py,ts,rust,go,neovim,aws,cloudflare,kubernetes,docker,svelte,ghactions" alt="Python, Typescript, Rust, Go, Neovim, AWS, Kubernetes, Docker, Svelte" />
+</a></p>
 
-<p align="left">
-  <img align="center" height="175" alt="MNThomson's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=MNThomson&theme=github_dark&show_icons=true&count_private=true&disable_animations=true&include_all_commits=true" />
-
-  <img align="center" height="175" alt="MNThomson's GitHub Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MNThomson&layout=compact&theme=github_dark&disable_animations=true&exclude_repo=GetMeThere" />
-</p>
+## My stats
+<p align="center"><a href="#">
+  <img alt="MNThomson's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=MNThomson&theme=onedark&show_icons=true&hide_rank=true&custom_title=Stats&count_private=true&hide_border=true&hide=issues&line_height=24&bg_color=0d1117&disable_animations=true&include_all_commits=true" />
+  <img alt="MNThomson's GitHub Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MNThomson&layout=compact&theme=onedark&count_private=true&hide_border=true&bg_color=0d1117&disable_animations=true&exclude_repo=GetMeThere" />
+</a></p>
