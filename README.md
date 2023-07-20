@@ -5,7 +5,7 @@
 ## I build with this tech
 
 <p align="center"><a href="#">
-  <img src="https://skillicons.dev/icons?i=py,ts,rust,go,neovim,aws,cloudflare,kubernetes,docker,svelte,ghactions" alt="Python, Typescript, Rust, Go, Neovim, AWS, Kubernetes, Docker, Svelte" />
+  <code><img src="https://skillicons.dev/icons?i=py,ts,rust,go,neovim,aws,cloudflare,kubernetes,docker,svelte,ghactions" alt="Python, Typescript, Rust, Go, Neovim, AWS, Kubernetes, Docker, Svelte" /></code>
 </a></p>
 
 ## My stats
