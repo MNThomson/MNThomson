@@ -1,6 +1,5 @@
 <h1 align="center">Hey there, I'm Max! 👋</h1>
 <p align="center">I work on cloud infrastructure, system observability, & automation tooling</p>
-<br>
 
 <h2 align="center">I build with this tech</h2>
 <p align="center"><a href="#">
